@@ -157,7 +157,9 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.PhotonMultiplayerShooter
+    Standalone: com.DefaultCompany.PhotonMultiplayerShooter
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -734,7 +736,9 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: ENABLE_PLAYFABSERVER_API
+    Android: ENABLE_PLAYFABSERVER_API;ENABLE_PLAYFABADMIN_API
+    Server: ENABLE_PLAYFABSERVER_API
+    Standalone: ENABLE_PLAYFABSERVER_API;ENABLE_PLAYFABADMIN_API
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
